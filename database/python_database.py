@@ -14,7 +14,7 @@ with conn:
     )")
     
     for file in fileList:
-        if ".txt" in file:
+        if file.endswith(".txt"):
             cur.execute("INSERT INTO tbl_files(col_file) VALUES (?)", \
                 (file,))
     
