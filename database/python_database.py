@@ -23,3 +23,5 @@ with conn:
     for item in varFile:
         msg = "File: {}\n".format(item)
         print(msg)
+    conn.commit()
+conn.close()
