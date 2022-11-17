@@ -5,12 +5,12 @@ class Husky(Dogs):
     dog = "Husky"
     
     def size(self):
-        print("{}'s are big dogs.".format(dog,size))
+        print("{}'s are big dogs.".format(self.dog))
 class Corgi(Dogs):
     dog = "Corgi"
     
     def size(self):
-        print("{}'s are small dogs.".format(dog,size))
+        print("{}'s are small dogs.".format(self.dog))
 
 obj_dogs = Dogs()
 obj_husky = Husky()
